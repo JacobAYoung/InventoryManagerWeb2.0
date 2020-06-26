@@ -1,0 +1,8 @@
+<div>
+    <mat-list role="list">
+        <app-product-item mat-list-item
+          *ngFor="let carItem of products"
+          [car] = "carItem"
+        ></app-product-item>
+    </mat-list>
+</div>

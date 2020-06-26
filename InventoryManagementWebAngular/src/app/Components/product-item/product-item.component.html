@@ -1,0 +1,62 @@
+<div *ngIf="isLoaded">
+    <div>
+        <!-- <a (click)="carDetail(car.id)"> -->
+            <!-- <mat-grid-list cols="2" rowHeight="120px">
+                <mat-grid-tile>{{ getMakeLabel(car.make)}} : {{car.carModel.modelName}}</mat-grid-tile>
+                <mat-grid-tile><button mat-icon-button >
+                    <mat-icon>add_circle_outline</mat-icon>
+                 </button></mat-grid-tile>
+                <mat-grid-tile><img src="assets/hitch.jpg" height="120px"></mat-grid-tile>
+                <mat-grid-tile>4</mat-grid-tile>
+              </mat-grid-list> -->
+              <!-- <mat-accordion> -->
+                <mat-expansion-panel [expanded]="true">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        {{ getMakeLabel(car.make)}}
+                    </mat-panel-title>
+                    <mat-panel-description class="description">
+                        {{car.carModel.modelName}}
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <div><p style="float: left;"><img src="assets/hitch.jpg" height="50px" width="200px"></p>
+                    <p class="sentence">I guess some more description stuff or other details</p>
+                    </div>
+                  <!-- <div>
+                    <img src="assets/hitch.jpg" height="50px" float="left">
+                    <p>test</p>
+                  </div> -->
+                  
+                  <!-- <mat-form-field>
+                     <mat-label>Image</mat-label> 
+                    
+                    <input matInput> 
+                  </mat-form-field>  -->
+                  <!-- <img src="assets/hitch.jpg" height="2px"> -->
+                  <!-- <mat-form-field>
+                    <mat-label>Age</mat-label>
+                    <input matInput type="number" min="1">
+                  </mat-form-field> -->
+                </mat-expansion-panel>
+                <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                                     (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <p>I'm visible because I am open</p>
+                </mat-expansion-panel> -->
+              <!-- </mat-accordion> -->
+            <!-- <span>
+                {{ getMakeLabel(car.make)}} : {{car.carModel.modelName}} 
+                <button mat-icon-button >
+                    <mat-icon>add_circle_outline</mat-icon>
+                 </button>
+            </span> -->
+        <!-- </a> -->
+    </div>
+</div>
